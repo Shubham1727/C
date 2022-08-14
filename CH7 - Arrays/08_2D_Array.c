@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int subjects, students;
+    printf("Enter the number of students\n");
+    scanf("%d", &students);
+
+    printf("Enter the number of subjects\n");
+    scanf("%d", &subjects);
+
+    int marks[students][subjects];
+
+    for (int i = 0; i < students; i++)
+    {
+        for (int j = 0; j < subjects; j++)
+        {
+            printf("Enter the marks of student %d in subject %d\n", i + 1, j + 1);
+            scanf("%d", &marks[i][j]);
+        }
+    }
+
+    for (int i = 0; i < students; i++)
+    {
+        for (int j = 0; j < subjects; j++)
+        {
+            printf("The marks of student %d in subject %d is : %d\n", i + 1, j + 1, marks[i][j]);
+        }
+    }
+
+    return 0;
+}
