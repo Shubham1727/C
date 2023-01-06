@@ -1,2 +1,2 @@
 C folder for chapterwise knowledge in C right from basics
-Contains projects
+Also contains beginner level projects 
